@@ -32,7 +32,7 @@ class TestSuperman(unittest.TestCase):
 		# superman = Superman()
 		self.assertIsInstance(self.superman, Flight)
 
-	def test_SupermanIsASwimmingSuperhero(self):
+	def test_SupermanIsARunningSuperhero(self):
 		# superman = Superman()
 		self.assertIsInstance(self.superman, Running)
 

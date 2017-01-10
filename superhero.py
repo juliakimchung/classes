@@ -1,8 +1,8 @@
 
 class Superhero(object):
 
-	def __init__(self, name, default_powers):
-		self.powers = default_powers
+	def __init__(self, name):
+		self.powers = set()
 		self.name = name
 		self.gender = ''
 		self.super_friends = set()

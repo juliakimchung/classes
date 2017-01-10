@@ -10,15 +10,15 @@ class TestSuperhero(unittest.TestCase):
 	def test_SuperheroAddPowerMustIncludePower(self):
 
 		random_superhero = Superhero("Clark")
-		random_superhero.add_power("Invisibility")
-		set.assertIn("Invisibility", random_superhero.powers)
+		random_superhero.add_powers("Invisibility")
+		self.assertIn("Invisibility", random_superhero.powers)
 
 	def test_SuperheroRemovePowerMustIncludePower(self):
 
 		random_superhero = Superhero("Clark")
-		random_superhero.add_power("Invisibility")
-		random_superhero.remove_power("Invisibility")
-		set.assertNotIn("Invisibility", random_superhero.powers)
+		random_superhero.add_powers("Invisibility")
+		random_superhero.remove_powers("Invisibility")
+		self.assertNotIn("Invisibility", random_superhero.powers)
 
-if __name__ = '__main__':
+if __name__ == '__main__':
 		unittest.main()
